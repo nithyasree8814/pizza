@@ -1,0 +1,98 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Page */
+body {
+    background: #f2f2f2;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Main Box */
+.main-box {
+    background: white;
+    width: 450px;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}
+
+/* Heading */
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #e91e63;
+}
+
+/* Table */
+table {
+    width: 100%;
+    border-spacing: 12px;
+}
+
+/* Left Column */
+td:first-child {
+    font-weight: bold;
+    width: 35%;
+}
+
+/* Inputs */
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+}
+
+/* Textarea */
+textarea {
+    height: 60px;
+    resize: none;
+}
+
+/* Focus */
+input:focus,
+select:focus,
+textarea:focus {
+    border-color: #e91e63;
+    outline: none;
+}
+
+/* Button */
+button {
+    padding: 10px 25px;
+    background: #e91e63;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #c2185b;
+}
+
+/* Error */
+.error {
+    color: red;
+    font-size: 12px;
+    display: block;
+    margin-top: 3px;
+}
+
+/* Error Border */
+input.error,
+select.error,
+textarea.error {
+    border-color: red;
+}

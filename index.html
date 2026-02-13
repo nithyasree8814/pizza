@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pizza Order Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="main-box">
+
+    <h2>🍕 Pizza Order Form</h2>
+
+    <form id="myForm">
+
+        <table>
+
+            <tr>
+                <td>Order ID</td>
+                <td>
+                    <input type="text" id="orderId" placeholder="P0001">
+                    <span class="error"></span>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Size</td>
+                <td>
+                    <select id="size">
+                        <option value="">Select</option>
+                        <option value="S">Small ₹99</option>
+                        <option value="M">Medium ₹199</option>
+                        <option value="L">Large ₹299</option>
+                    </select>
+                    <span class="error"></span>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Quantity</td>
+                <td>
+                    <input type="number" id="qty" min="1" max="10" value="1">
+                    <span class="error"></span>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Phone</td>
+                <td>
+                    <input type="text" id="phone" placeholder="9876543210">
+                    <span class="error"></span>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Address</td>
+                <td>
+                    <textarea id="address"></textarea>
+                    <span class="error"></span>
+                </td>
+            </tr>
+
+            <tr>
+                <td colspan="2" align="center">
+                    <button type="submit">Place Order</button>
+                </td>
+            </tr>
+
+        </table>
+
+    </form>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
